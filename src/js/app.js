@@ -37,10 +37,10 @@ function render(variables = {}) {
           <h2>${variables.role}</h2>
           <h3>${variables.city}, ${variables.country}</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="${variables.github}"><i class="fab fa-github"></i></a></li>
-            <li><a href="${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="${variables.instagram}"><i class="fab fa-instagram"></i></a></li>
+            <li><a href=${variables.twitter}><i class="fab fa-twitter"></i></a></li>
+            <li><a href=${variables.github}><i class="fab fa-github"></i></a></li>
+            <li><a href=${variables.linkedin}><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=${variables.instagram}><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -60,15 +60,16 @@ window.onload = function() {
     // social media bar position (position-left or position-right)
     socialMediaPosition: "position-right",
     // social media usernames
-    twitter: null,
-    github: null,
-    linkedin: null,
-    instagram: null,
-    name: null,
-    lastName: null,
-    role: null,
-    country: null,
-    city: null
+    twitter: "https://x.com/4geeksacademyES",
+    github: "https://github.com/4geeksacademy",
+    linkedin:
+      "https://www.linkedin.com/school/4geeksacademyes/?originalSubdomain=es",
+    instagram: "https://www.instagram.com/4geeksacademyes/?hl=es",
+    name: "Name",
+    lastName: ", Last Name",
+    role: "Role",
+    country: "Country",
+    city: "City"
   };
   render(window.variables); // render the card for the first time
 
